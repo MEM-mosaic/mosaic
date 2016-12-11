@@ -1,1 +1,2 @@
 D:\github\team project\mosaic\mosaic\bin\Debug\mosaic.exe.config
+D:\Мои документы\GitHub\mosaic\mosaic\bin\Debug\mosaic.exe.config
