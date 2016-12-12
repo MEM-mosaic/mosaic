@@ -1,2 +1,17 @@
 D:\github\team project\mosaic\mosaic\bin\Debug\mosaic.exe.config
 D:\Мои документы\GitHub\mosaic\mosaic\bin\Debug\mosaic.exe.config
+C:\Users\Admin\Desktop\mosaic\mosaic\bin\Debug\mosaic.exe.config
+C:\Users\Admin\Desktop\mosaic\mosaic\bin\Debug\mosaic.exe
+C:\Users\Admin\Desktop\mosaic\mosaic\bin\Debug\mosaic.pdb
+C:\Users\Admin\Desktop\mosaic\mosaic\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\mosaic\mosaic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\mosaic\mosaic\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\mosaic\mosaic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\mosaic\mosaic\obj\Debug\mosaic.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\mosaic\mosaic\obj\Debug\mosaic.MEM_mosaic.resources
+C:\Users\Admin\Desktop\mosaic\mosaic\obj\Debug\mosaic.Settings.resources
+C:\Users\Admin\Desktop\mosaic\mosaic\obj\Debug\mosaic.Help.resources
+C:\Users\Admin\Desktop\mosaic\mosaic\obj\Debug\mosaic.Properties.Resources.resources
+C:\Users\Admin\Desktop\mosaic\mosaic\obj\Debug\mosaic.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\mosaic\mosaic\obj\Debug\mosaic.exe
+C:\Users\Admin\Desktop\mosaic\mosaic\obj\Debug\mosaic.pdb

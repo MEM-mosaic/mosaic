@@ -9,7 +9,7 @@ namespace mosaic
     class Program
     {
         static void Main(string[] args)
-        { //ятоппрогер
+        { 
         }
     }
 }
