@@ -1,2 +1,11 @@
 D:\github\team project\mosaic\mosaic\bin\Debug\mosaic.exe.config
 D:\Мои документы\GitHub\mosaic\mosaic\bin\Debug\mosaic.exe.config
+D:\github\team project\mosaic\mosaic\bin\Debug\mosaic.exe
+D:\github\team project\mosaic\mosaic\bin\Debug\mosaic.pdb
+D:\github\team project\mosaic\mosaic\bin\Debug\EntityFramework.dll
+D:\github\team project\mosaic\mosaic\bin\Debug\EntityFramework.SqlServer.dll
+D:\github\team project\mosaic\mosaic\bin\Debug\EntityFramework.xml
+D:\github\team project\mosaic\mosaic\bin\Debug\EntityFramework.SqlServer.xml
+D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.csprojResolveAssemblyReference.cache
+D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.exe
+D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.pdb
