@@ -158,6 +158,9 @@ namespace mosaic
                 PictureBox[a].Location = pointI;
                 PictureBox[i].BorderStyle = BorderStyle.FixedSingle;
             }
+
+            a = random.Next(0, PictureBox.Length);
+            PictureBox[a].Visible = false;
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)

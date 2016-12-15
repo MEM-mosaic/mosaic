@@ -118,6 +118,7 @@
             this.ClientSize = new System.Drawing.Size(779, 538);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.zone);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MEM_mosaic";
             this.Text = "MEM-mosaic";
             this.toolStrip1.ResumeLayout(false);
