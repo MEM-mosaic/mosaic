@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace mosaic
 {
+    /// <summary>
+    /// Класс диалогового окна настроек программы
+    /// </summary>
     public partial class Settings : Form
     {
         public Settings()
@@ -17,16 +20,18 @@ namespace mosaic
             InitializeComponent();
         }
 
-        public int Length = 6;
+        public int Length = 3;       
 
-        private void Settings_Load(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            numericUpDown1.Value = Length;
-        }
-
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-            Length = (int)numericUpDown1.Value;
+            if (comboBox1.SelectedIndex == 0)
+            { Length = 3; }
+            if (comboBox1.SelectedIndex == 1)
+            { Length = 5; }
+            if (comboBox1.SelectedIndex == 2)
+            { Length = 7; }
+            if (comboBox1.SelectedIndex == 3)
+            { Length = 9; }
         }
     }
 }

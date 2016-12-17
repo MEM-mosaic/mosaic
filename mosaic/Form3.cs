@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace mosaic
 {
+    /// <summary>
+    /// Класс диалогового окна помощи пользователю
+    /// </summary>
     public partial class Help : Form
     {
         public Help()
@@ -19,6 +22,11 @@ namespace mosaic
 
         public Image ImageDuplicate = null;
 
+        /// <summary>
+        /// Метод для загрузки картинки на форму посредством PictureBox.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Help_Load(object sender, EventArgs e)
         {
             pictureBox1.Image = ImageDuplicate;

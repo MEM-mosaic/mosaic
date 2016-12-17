@@ -41,9 +41,11 @@
             // 
             // zone
             // 
-            this.zone.Location = new System.Drawing.Point(19, 58);
+            this.zone.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.zone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.zone.Location = new System.Drawing.Point(12, 46);
             this.zone.Name = "zone";
-            this.zone.Size = new System.Drawing.Size(694, 452);
+            this.zone.Size = new System.Drawing.Size(1006, 591);
             this.zone.TabIndex = 0;
             // 
             // toolStrip1
@@ -57,7 +59,7 @@
             this.toolStripButton5});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(779, 32);
+            this.toolStrip1.Size = new System.Drawing.Size(1030, 32);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -115,12 +117,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 538);
+            this.BackColor = System.Drawing.Color.Yellow;
+            this.ClientSize = new System.Drawing.Size(1030, 649);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.zone);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "MEM_mosaic";
             this.Text = "MEM-mosaic";
+            this.Load += new System.EventHandler(this.MEM_mosaic_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
