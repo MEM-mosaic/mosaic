@@ -29,8 +29,6 @@ D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.Settings.resources
 D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.Help.resources
 D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.Properties.Resources.resources
 D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.csproj.GenerateResource.Cache
-D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.Form4.resources
-D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.Form5.resources
 C:\Users\Admin\Desktop\mosaic\mosaic\obj\Debug\mosaic.ImageFromDB.resources
 D:\Мои документы\GitHub\mosaic\mosaic\obj\Debug\mosaic.exe
 D:\Мои документы\GitHub\mosaic\mosaic\obj\Debug\mosaic.pdb
@@ -47,3 +45,4 @@ D:\Мои документы\GitHub\mosaic\mosaic\obj\Debug\mosaic.Help.resource
 D:\Мои документы\GitHub\mosaic\mosaic\obj\Debug\mosaic.ImageFromDB.resources
 D:\Мои документы\GitHub\mosaic\mosaic\obj\Debug\mosaic.Properties.Resources.resources
 D:\Мои документы\GitHub\mosaic\mosaic\obj\Debug\mosaic.csproj.GenerateResource.Cache
+D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.ImageFromDB.resources
