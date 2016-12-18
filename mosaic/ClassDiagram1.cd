@@ -35,13 +35,6 @@
       <FileName>Form3.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="mosaic.Exit" Collapsed="true">
-    <Position X="4" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAYAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Form4.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="mosaic.ImageFromDB" Collapsed="true">
     <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>

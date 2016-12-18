@@ -151,18 +151,8 @@ namespace mosaic
                             PictureBox[m].BorderStyle = BorderStyle.None;// убираем обрамление прямоугольников
                         }
                     }
-                    Exit a = new Exit();
-
-                    if (a.ShowDialog() == DialogResult.OK)
-                    {
-                        Application.Restart();
-                    }
-                    else
-                    {
-                        Application.Exit();
-                    }
-
-                    //break;          
+      
+                    break;          
                 }
             }
         }
@@ -233,7 +223,7 @@ namespace mosaic
         }
 
         /// <summary>
-        /// Восстанавливаем картинку соответсвенно первичным координатам.
+        /// Восстанавливаем картинку соответственно первичным координатам.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
