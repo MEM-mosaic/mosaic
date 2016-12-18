@@ -18,6 +18,7 @@ namespace mosaic
         public MEM_mosaic()
         {
             InitializeComponent();
+            DataBaseManager manager = new DataBaseManager();
         }
     
         PictureBox[] PictureBox = null;// Массив объектов прямоугольников для хранения сегментов картинки.
@@ -150,18 +151,28 @@ namespace mosaic
                             PictureBox[m].BorderStyle = BorderStyle.None;// убираем обрамление прямоугольников
                         }
                     }
-                                    
+
+                    Form4 a = new Form4();
+
+                    if (a.ShowDialog() == DialogResult.OK)
+                    {
+                        Application.Restart();
+                    }
+                    else
+                    {
+                        Application.Exit();
+                    }
+
                     break;
                 }
             }
         }
-
         /// <summary>
         /// Открытие диалогового окна выбора файла и создание новой области прорисовки картинки.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             // Фильтр показа только файлов с определенным расширением.
@@ -177,11 +188,27 @@ namespace mosaic
         }
 
         /// <summary>
+        /// Открытие диалогового окна выбора файла из базы данных
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form5 imageChoose = new Form5(new DataBaseManager());
+            imageChoose.ShowDialog();
+            if (imageChoose.Result != null)
+            {
+                Picture = imageChoose.Result;
+                CreatePictureZone();
+            }
+        }
+
+        /// <summary>
         /// Перемешивание прямоугольников, хаотично меняем их координаты.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void toolStripButton2_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             if (Picture == null) return;
 
@@ -210,7 +237,7 @@ namespace mosaic
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void toolStripButton3_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < PictureBox.Length; i++)
             {
@@ -225,7 +252,7 @@ namespace mosaic
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void toolStripButton4_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
             Settings settings = new Settings();
             settings.Length = Length;
@@ -237,15 +264,25 @@ namespace mosaic
         }
 
         /// <summary>
-        /// Открываем диалоговое окно с нормальным видо картинки, для освежения памяти пользователя.
+        /// Открываем диалоговое окно с нормальным видом картинки, для освежения памяти пользователя.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void toolStripButton5_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
             Help helpDlg = new Help();
             helpDlg.ImageDuplicate = Picture;
             helpDlg.ShowDialog();
+        }
+
+        /// <summary>
+        /// Выход из приложения
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

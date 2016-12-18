@@ -8,7 +8,7 @@ using System.Drawing;
 
 namespace mosaic
 {
-    class DataBaseManager
+    public class DataBaseManager
     {
         Repository repo = new Repository();
 

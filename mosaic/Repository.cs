@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using System.Data.Entity.Migrations;
+using System.Data.Entity;
+
 
 namespace mosaic
 {
@@ -31,7 +34,7 @@ namespace mosaic
         {
             _dataset = new DataSet();
             _dataset.Links = new List<Links>();
-            //Seed();
+            Seed();
         }
 
         protected void Seed()
@@ -47,13 +50,24 @@ namespace mosaic
                         Links l = new Links();
                         l.Level = i;
                         l.Name = fileNames[k];
-                        l.Link = path + fileNames[k];
-                        _dataset.Links.Add(l);
-                        c.Links.AddOrUpdate(l);
+                        l.Link = path + i.ToString() + "\\" + fileNames[k];
+                        var res = from link in c.Links where link.Name == fileNames[k] select link;
+                        if (!check(res))
+                        {
+                            c.Links.AddOrUpdate(l);
+                            _dataset.Links.Add(l);
+                        }
                     }
                 }
                 c.SaveChanges();
             }
+        }
+
+        public bool check(System.Linq.IQueryable<Links> sq)
+        {
+            bool exist = true;
+            if (sq == null) exist = false;
+            return exist;
         }
 
         public List<string> GetPicturesNames(string s)
@@ -89,7 +103,7 @@ namespace mosaic
 
         public void AddToDataBase(string name, int level)
         {
-            string destFile = System.IO.Path.Combine(path + level.ToString() + "\\", name);
+            /*string destFile = System.IO.Path.Combine(path + level.ToString() + "\\", name);
             if (!System.IO.Directory.Exists(path + level.ToString() + "\\"))
             {
                 System.IO.Directory.CreateDirectory(path + level.ToString() + "\\");
@@ -106,7 +120,7 @@ namespace mosaic
                 writer.WriteByte((byte)reader.ReadByte());
             }
             reader.Close();
-            writer.Close();
+            writer.Close();*/
 
 
             using (var c = new Context())
@@ -115,7 +129,12 @@ namespace mosaic
                 l.Name = name;
                 l.Link = name;
                 l.Level = level;
-                c.Links.AddOrUpdate(l);
+                var res = from link in c.Links where link.Name == name select link;
+                if (!check(res))
+                {
+                    c.Links.AddOrUpdate(l);
+                    _dataset.Links.Add(l);
+                }
             }
         }
     }
