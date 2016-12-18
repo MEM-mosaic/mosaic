@@ -25,7 +25,6 @@ namespace mosaic
             return result;
         }
 
-
         //Со второго
         public List<Bitmap> GetBitmapListMedium()
         {
@@ -56,17 +55,17 @@ namespace mosaic
         //Добавление своей картинки  (name - полный путь к файлу)
         public void AddPictureToEasyList(string name)
         {
-            repo.AddToDataBase(name, 1);
+            //  repo.AddToDataBase(name, 1);
         }
 
         public void AddPictureToMediumList(string name)
         {
-            repo.AddToDataBase(name, 2);
+            //   repo.AddToDataBase(name, 2);
         }
 
         public void AddPictureToHardList(string name)
         {
-            repo.AddToDataBase(name, 3);
+            //   repo.AddToDataBase(name, 3);
         }
 
 

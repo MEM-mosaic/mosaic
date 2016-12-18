@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 using System.Data.Entity.Migrations;
 using System.Data.Entity;
 
-
 namespace mosaic
 {
+
+
     class Repository
     {
         private string path = AppDomain.CurrentDomain.BaseDirectory + "mems\\";
@@ -41,33 +42,27 @@ namespace mosaic
         {
             using (var c = new Context())
             {
-               // c.Links.ToList();
-                for (int i = 1; i < 4; i++)
+                // c.Links.ToList();
+                if (!c.Links.Any())
                 {
-                    List<string> fileNames = GetPicturesNames(i.ToString());
-                    for (int k = 0; k < fileNames.Count; k++)
+                    for (int i = 1; i <= 3; i++)
                     {
-                        Links l = new Links();
-                        l.Level = i;
-                        l.Name = fileNames[k];
-                        l.Link = path + i.ToString() + "\\" + fileNames[k];
-                        var res = from link in c.Links where link.Name == fileNames[k] select link;
-                        if (!check(res))
+                        List<string> fileNames = GetPicturesNames(i.ToString());
+                        Console.WriteLine(fileNames.Count);
+                        for (int k = 0; k < fileNames.Count; k++)
                         {
+                            Links l = new Links();
+                            l.Level = i;
+                            l.Name = fileNames[k];
+                            l.Link = path + i.ToString() + "\\" + fileNames[k];
+                            var res = from link in c.Links where link.Name == fileNames[k] select link;
                             c.Links.AddOrUpdate(l);
                             _dataset.Links.Add(l);
                         }
                     }
+                    c.SaveChanges();
                 }
-                c.SaveChanges();
             }
-        }
-
-        public bool check(System.Linq.IQueryable<Links> sq)
-        {
-            bool exist = true;
-            if (sq == null) exist = false;
-            return exist;
         }
 
         public List<string> GetPicturesNames(string s)
@@ -101,42 +96,36 @@ namespace mosaic
             return names;
         }
 
-        public void AddToDataBase(string name, int level)
-        {
-            /*string destFile = System.IO.Path.Combine(path + level.ToString() + "\\", name);
-            if (!System.IO.Directory.Exists(path + level.ToString() + "\\"))
-            {
-                System.IO.Directory.CreateDirectory(path + level.ToString() + "\\");
-            }
+        /* public void AddToDataBase(string name, int level)
+         {
+             //   System.IO.File.Copy(name, destFile, true);
 
 
-            //   System.IO.File.Copy(name, destFile, true);
+             string destFile = System.IO.Path.Combine(path + level.ToString() + "\\", name);
+             if (!System.IO.Directory.Exists(path + level.ToString() + "\\"))
+             {
+                 System.IO.Directory.CreateDirectory(path + level.ToString() + "\\");
+             }
+             FileStream reader = File.Open(name, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+             FileStream writer = File.Create(destFile);
+             while (reader.Position < reader.Length)
+             {
+                 writer.WriteByte((byte)reader.ReadByte());
+             }
+             reader.Close();
+             writer.Close();
 
 
-            FileStream reader = File.Open(name, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
-            FileStream writer = File.Create(destFile);
-            while (reader.Position < reader.Length)
-            {
-                writer.WriteByte((byte)reader.ReadByte());
-            }
-            reader.Close();
-            writer.Close();*/
-
-
-            using (var c = new Context())
-            {
-                Links l = new Links();
-                l.Name = name;
-                l.Link = name;
-                l.Level = level;
-                var res = from link in c.Links where link.Name == name select link;
-                if (!check(res))
-                {
-                    c.Links.AddOrUpdate(l);
-                    _dataset.Links.Add(l);
-                }
-            }
-        }
+             using (var c = new Context())
+             {
+                 Links l = new Links();
+                 l.Name = name;
+                 l.Link = name;
+                 l.Level = level;
+                 var res = from link in c.Links where link.Name == name select link;
+                 c.Links.AddOrUpdate(l);
+                 _dataset.Links.Add(l);
+             }
+         }*/
     }
 }
-

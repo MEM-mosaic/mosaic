@@ -31,3 +31,5 @@ D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.Properties.Resources.resou
 D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.csproj.GenerateResource.Cache
 C:\Users\Admin\Desktop\mosaic\mosaic\obj\Debug\mosaic.Form4.resources
 C:\Users\Admin\Desktop\mosaic\mosaic\obj\Debug\mosaic.Form5.resources
+D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.Form4.resources
+D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.Form5.resources

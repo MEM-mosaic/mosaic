@@ -12,9 +12,6 @@ namespace mosaic
         [STAThread]
         static void Main(string[] args)
         {
-            Repository r = new Repository();
-            DataBaseManager d = new DataBaseManager();
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MEM_mosaic());
