@@ -50,6 +50,10 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Easy Mode",
+            "Medium Mode",
+            "Hard Mode"});
             this.comboBox1.Location = new System.Drawing.Point(272, 84);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(221, 28);
