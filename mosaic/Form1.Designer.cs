@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MEM_mosaic));
             this.zone = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -40,6 +41,7 @@
             // 
             // zone
             // 
+            this.zone.BackColor = System.Drawing.Color.Aqua;
             this.zone.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.zone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.zone.Location = new System.Drawing.Point(12, 12);
@@ -49,9 +51,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1034, 54);
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.button1.Location = new System.Drawing.Point(1039, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 76);
+            this.button1.Size = new System.Drawing.Size(100, 100);
             this.button1.TabIndex = 2;
             this.button1.Text = "Картинка";
             this.button1.UseVisualStyleBackColor = true;
@@ -59,9 +63,11 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1134, 54);
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.ForeColor = System.Drawing.Color.SpringGreen;
+            this.button2.Location = new System.Drawing.Point(1157, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 76);
+            this.button2.Size = new System.Drawing.Size(100, 100);
             this.button2.TabIndex = 3;
             this.button2.Text = "Картинка С БД";
             this.button2.UseVisualStyleBackColor = true;
@@ -69,9 +75,11 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(1081, 153);
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.ForeColor = System.Drawing.Color.SpringGreen;
+            this.button3.Location = new System.Drawing.Point(1090, 129);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(119, 55);
+            this.button3.Size = new System.Drawing.Size(125, 60);
             this.button3.TabIndex = 4;
             this.button3.Text = "Перемешать";
             this.button3.UseVisualStyleBackColor = true;
@@ -79,9 +87,11 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(1068, 227);
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.ForeColor = System.Drawing.Color.SpringGreen;
+            this.button4.Location = new System.Drawing.Point(1090, 212);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(142, 38);
+            this.button4.Size = new System.Drawing.Size(125, 60);
             this.button4.TabIndex = 5;
             this.button4.Text = "Восстановить";
             this.button4.UseVisualStyleBackColor = true;
@@ -89,9 +99,11 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(1081, 284);
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.ForeColor = System.Drawing.Color.SpringGreen;
+            this.button5.Location = new System.Drawing.Point(1090, 301);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(109, 48);
+            this.button5.Size = new System.Drawing.Size(125, 60);
             this.button5.TabIndex = 6;
             this.button5.Text = "Настройки";
             this.button5.UseVisualStyleBackColor = true;
@@ -99,9 +111,11 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(1081, 349);
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.ForeColor = System.Drawing.Color.SpringGreen;
+            this.button6.Location = new System.Drawing.Point(1090, 386);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(109, 47);
+            this.button6.Size = new System.Drawing.Size(125, 60);
             this.button6.TabIndex = 3;
             this.button6.Text = "Подсказка";
             this.button6.UseVisualStyleBackColor = true;
@@ -109,12 +123,13 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(1100, 419);
+            this.button7.BackColor = System.Drawing.Color.Red;
+            this.button7.Location = new System.Drawing.Point(1090, 520);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(90, 49);
+            this.button7.Size = new System.Drawing.Size(125, 60);
             this.button7.TabIndex = 3;
             this.button7.Text = "Выход";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // MEM_mosaic
@@ -122,6 +137,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1283, 649);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);

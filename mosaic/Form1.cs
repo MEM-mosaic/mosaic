@@ -152,7 +152,7 @@ namespace mosaic
                         }
                     }
 
-                    Form4 a = new Form4();
+                    /*Form4 a = new Form4();
 
                     if (a.ShowDialog() == DialogResult.OK)
                     {
@@ -161,7 +161,7 @@ namespace mosaic
                     else
                     {
                         Application.Exit();
-                    }
+                    }*/
 
                     break;
                 }
