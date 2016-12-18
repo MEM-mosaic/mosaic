@@ -73,13 +73,14 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(222, 165);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(331, 250);
+            this.pictureBox1.Size = new System.Drawing.Size(350, 295);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(127, 452);
+            this.button1.Location = new System.Drawing.Point(91, 466);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 67);
             this.button1.TabIndex = 4;
@@ -89,7 +90,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(338, 452);
+            this.button2.Location = new System.Drawing.Point(331, 466);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 67);
             this.button2.TabIndex = 5;
@@ -99,7 +100,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(563, 452);
+            this.button3.Location = new System.Drawing.Point(583, 466);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 67);
             this.button3.TabIndex = 6;
