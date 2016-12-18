@@ -32,3 +32,18 @@ D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.csproj.GenerateResource.Ca
 D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.Form4.resources
 D:\github\team project\mosaic\mosaic\obj\Debug\mosaic.Form5.resources
 C:\Users\Admin\Desktop\mosaic\mosaic\obj\Debug\mosaic.ImageFromDB.resources
+D:\Мои документы\GitHub\mosaic\mosaic\obj\Debug\mosaic.exe
+D:\Мои документы\GitHub\mosaic\mosaic\obj\Debug\mosaic.pdb
+D:\Мои документы\GitHub\mosaic\mosaic\bin\Debug\mosaic.exe
+D:\Мои документы\GitHub\mosaic\mosaic\bin\Debug\mosaic.pdb
+D:\Мои документы\GitHub\mosaic\mosaic\bin\Debug\EntityFramework.dll
+D:\Мои документы\GitHub\mosaic\mosaic\bin\Debug\EntityFramework.SqlServer.dll
+D:\Мои документы\GitHub\mosaic\mosaic\bin\Debug\EntityFramework.xml
+D:\Мои документы\GitHub\mosaic\mosaic\bin\Debug\EntityFramework.SqlServer.xml
+D:\Мои документы\GitHub\mosaic\mosaic\obj\Debug\mosaic.csprojResolveAssemblyReference.cache
+D:\Мои документы\GitHub\mosaic\mosaic\obj\Debug\mosaic.MEM_mosaic.resources
+D:\Мои документы\GitHub\mosaic\mosaic\obj\Debug\mosaic.Settings.resources
+D:\Мои документы\GitHub\mosaic\mosaic\obj\Debug\mosaic.Help.resources
+D:\Мои документы\GitHub\mosaic\mosaic\obj\Debug\mosaic.ImageFromDB.resources
+D:\Мои документы\GitHub\mosaic\mosaic\obj\Debug\mosaic.Properties.Resources.resources
+D:\Мои документы\GitHub\mosaic\mosaic\obj\Debug\mosaic.csproj.GenerateResource.Cache
