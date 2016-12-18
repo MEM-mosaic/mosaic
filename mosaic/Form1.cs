@@ -151,8 +151,7 @@ namespace mosaic
                             PictureBox[m].BorderStyle = BorderStyle.None;// убираем обрамление прямоугольников
                         }
                     }
-
-                    /*Form4 a = new Form4();
+                    Exit a = new Exit();
 
                     if (a.ShowDialog() == DialogResult.OK)
                     {
@@ -161,12 +160,13 @@ namespace mosaic
                     else
                     {
                         Application.Exit();
-                    }*/
+                    }
 
-                    break;
+                    //break;          
                 }
             }
         }
+
         /// <summary>
         /// Открытие диалогового окна выбора файла и создание новой области прорисовки картинки.
         /// </summary>
@@ -194,7 +194,7 @@ namespace mosaic
         /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
-            Form5 imageChoose = new Form5(new DataBaseManager());
+            ImageFromDB imageChoose = new ImageFromDB(new DataBaseManager());
             imageChoose.ShowDialog();
             if (imageChoose.Result != null)
             {

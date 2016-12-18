@@ -79,7 +79,7 @@
             this.button3.ForeColor = System.Drawing.Color.SpringGreen;
             this.button3.Location = new System.Drawing.Point(1090, 129);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 60);
+            this.button3.Size = new System.Drawing.Size(130, 60);
             this.button3.TabIndex = 4;
             this.button3.Text = "Перемешать";
             this.button3.UseVisualStyleBackColor = true;
@@ -91,7 +91,7 @@
             this.button4.ForeColor = System.Drawing.Color.SpringGreen;
             this.button4.Location = new System.Drawing.Point(1090, 212);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 60);
+            this.button4.Size = new System.Drawing.Size(130, 60);
             this.button4.TabIndex = 5;
             this.button4.Text = "Восстановить";
             this.button4.UseVisualStyleBackColor = true;
@@ -103,7 +103,7 @@
             this.button5.ForeColor = System.Drawing.Color.SpringGreen;
             this.button5.Location = new System.Drawing.Point(1090, 301);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(125, 60);
+            this.button5.Size = new System.Drawing.Size(130, 60);
             this.button5.TabIndex = 6;
             this.button5.Text = "Настройки";
             this.button5.UseVisualStyleBackColor = true;
@@ -115,7 +115,7 @@
             this.button6.ForeColor = System.Drawing.Color.SpringGreen;
             this.button6.Location = new System.Drawing.Point(1090, 386);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(125, 60);
+            this.button6.Size = new System.Drawing.Size(130, 60);
             this.button6.TabIndex = 3;
             this.button6.Text = "Подсказка";
             this.button6.UseVisualStyleBackColor = true;

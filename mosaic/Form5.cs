@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace mosaic
 {
-    public partial class Form5 : Form
+    public partial class ImageFromDB : Form
     {
 
         public Bitmap Result = null;
@@ -19,7 +19,7 @@ namespace mosaic
         List<Bitmap> mediumList = new List<Bitmap>();
         List<Bitmap> hardList = new List<Bitmap>();
 
-        public Form5(DataBaseManager dbm)
+        public ImageFromDB(DataBaseManager dbm)
         {
             InitializeComponent();
 
